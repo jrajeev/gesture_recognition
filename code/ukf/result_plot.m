@@ -1,0 +1,10 @@
+function result_plot(Rukf,Rvicon,Raccel,Rquat,iters)
+    subplot(2,2,1),rotplot(Rukf)
+    title(['UKF iteration :: ',num2str(iters)])
+    subplot(2,2,2),rotplot(Rvicon)
+    title('Vicon')
+    subplot(2,2,3),rotplot(Raccel)
+    title('Raw Accelerometer')
+    subplot(2,2,4),rotplot(Rquat)
+    title('Raw Gyro')
+end
